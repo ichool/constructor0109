@@ -15,8 +15,23 @@ public:
 		nama = "";
 	};
 
-	mahasiswa(int iNim);
-	mahasiswa(string iNama);
-	mahasiswa(int iNim, string iNama);
-	void cetak();
+	mahasiswa(int iNim)
+	{
+		iNim = nim;
+	}
+	mahasiswa(string iNama)
+	{
+		iNama = nama;
+	}
+	mahasiswa(int iNim, string iNama)
+
+	{
+		nim = iNim;
+		nama = iNama;
+	}
+	void cetak()
+	{
+		cout << endl << "Nim =" << nim << endl;
+		cout << "nama =" << nama << endl;
+	}
 };
